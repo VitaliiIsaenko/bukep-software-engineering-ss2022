@@ -21,7 +21,7 @@ namespace Countries
         {
             path_ = path;
         }
-        void Read()
+        public void Read()
         {
             StreamReader sr = new StreamReader(path_);
             titles_rows = sr.ReadLine().Split(",");
@@ -41,7 +41,7 @@ namespace Countries
             }
             sr.Close();
         }
-        void Save()
+        public void Save()
         {
             StreamWriter sw = new StreamWriter(path_);
             sw.WriteLine(string.Join(", ", titles_rows));
@@ -50,7 +50,7 @@ namespace Countries
             }
             sw.Close();
         }
-        void AddCountry(Country country)
+        public void AddCountry(Country country)
         {
             countries_.Add(country);
         } 
