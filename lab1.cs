@@ -1,13 +1,5 @@
-﻿Console.WriteLine("Хотите ли вы жить у моря?");
-string answer = Console.ReadLine();
-bool liveBySea;
+﻿using Countries;
 
-if (answer == "да")
-{
-    liveBySea = true;
-}
-else
-{
-    liveBySea = false;
-}
-Console.WriteLine(liveBySea);   
+
+CountriesCsv countryCsv = new CountriesCsv("countries/ibragimov.csv");
+Console.WriteLine(countryCsv.countries_[0].Name);
