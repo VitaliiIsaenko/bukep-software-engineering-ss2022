@@ -1,6 +1,4 @@
-﻿using CountriesRecommendation.Helpers;
-
-Console.WriteLine("Хотите ли вы жить у моря?");
+﻿Console.WriteLine("Хотите ли вы жить у моря?");
 string answer = Console.ReadLine();
 bool liveBySea;
 
