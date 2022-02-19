@@ -1,14 +1,24 @@
-﻿Console.WriteLine("Хотите ли вы жить у моря?");
-string answer = Console.ReadLine();
-bool liveBySea;
+﻿namespace CountriesRecommendation;
 
-if (answer == "да")
+public class Program
 {
-    liveBySea = true;
-}
-else
-{
-    liveBySea = false;
-}
+    public void Main()
+    {
+        Console.WriteLine("Хотите ли вы жить у моря?");
+        string answer = Console.ReadLine();
 
-Console.WriteLine(liveBySea);
+        bool liveBySea;
+
+        if (answer == "да")
+        {
+            liveBySea = true;
+        }
+
+        else
+        {
+            liveBySea = false;
+        }
+
+        Console.WriteLine(liveBySea);
+    }
+}
