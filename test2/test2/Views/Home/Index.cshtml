@@ -1,0 +1,207 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col">
+    <div class="row col" style="max-width: 500px;">
+        <div class=" col input-group mb-2 ">
+            <span class="input-group-text">$</span>
+            <input type="text" style="max-width: 150px;" name="salary_min" class="form-control" aria-label="Salary" placeholder="Min." value="0">
+            <span class="input-group-text">.00</span>
+        </div>
+        <div class=" col input-group mb-2 ">
+            <span class="input-group-text">$</span>
+            <input type="text" style="max-width: 150px;" name="salary_max" class="form-control" aria-label="Salary" placeholder="Max." value="9999">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <div class="row col" style="max-width: 500px;">
+        <div class="col input-group mb-2">
+            <span class="input-group-text">km²</span>
+            <input type="text" style="max-width: 150px;" name="area_min" class="form-control" aria-label="Salary" placeholder="Min." value="0">
+        </div>
+        <div class="col input-group mb-2">
+            <input type="text" style="max-width: 150px;" name="area_max" class="form-control" aria-label="Salary" placeholder="Max." value="9999999999">
+            <span class="input-group-text">km²</span>
+        </div>
+    </div>
+    <div class="row col" style="max-width: 500px;">
+        <div class="col input-group mb-2">
+            <span class="input-group-text"><i class="bi bi-people"></i></span>
+            <input type="text" style="max-width: 170px;" name="people_min" class="form-control" aria-label="Salary" placeholder="Min." value="0">
+        </div>
+        <div class="col input-group mb-2">
+            <input type="text" style="max-width: 170px;" name="people_max" class="form-control" aria-label="Salary" placeholder="Max." value="9999999999">
+            <span class="input-group-text"><i class="bi bi-people"></i></span>
+        </div>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" name="sea_check" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Access to the sea</label>
+    </div>
+
+    <div>
+        <input type="submit" class="btn btn-primary" style="color:aliceblue" onclick="getCountries()" value="Find Countruies"></button>
+    </div>
+</div>
+<br>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Country</th>
+            <th scope="col" id="average_salary">
+                Average Salary
+                <span id="filter">
+                    <span onclick="sortCountries(this, true, 1)">
+                        <i id="up" class="bi bi-chevron-compact-up" value="0"></i>
+                    </span>
+                    <span onclick="sortCountries(this, false, 1)">
+                        <i id="down" class="bi bi-chevron-compact-down" value="0"></i>
+                    </span>
+                </span>
+            </th>
+            <th scope="col" id="area">
+                Area
+                <span id="filter">
+                    <span onclick="sortCountries(this, true, 2)">
+                        <i id="up" class="bi bi-chevron-compact-up" value="0"></i>
+                    </span>
+                    <span onclick="sortCountries(this, false, 2)">
+                        <i id="down" class="bi bi-chevron-compact-down" value="0"></i>
+                    </span>
+                </span>
+            </th>
+            <th scope="col" id="population">
+                Population
+                <span id="filter">
+                    <span onclick="sortCountries(this, true, 3)">
+                        <i id="up" class="bi bi-chevron-compact-up" value="0"></i>
+                    </span>
+                    <span onclick="sortCountries(this, false, 3)">
+                        <i id="down" class="bi bi-chevron-compact-down" value="0"></i>
+                    </span>
+                </span>
+            </th>
+            <th scope="col" id="sea">
+                Sea
+                <span id="filter">
+                    <span onclick="sortCountries(this, true, 4)">
+                        <i id="up" class="bi bi-chevron-compact-up" value="0"></i>
+                    </span>
+                    <span onclick="sortCountries(this, false, 4)">
+                        <i id="down" class="bi bi-chevron-compact-down" value="0"></i>
+                    </span>
+                </span>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="table-striped">
+    </tbody>
+</table>
+
+<template id="country_row">
+    <tr>
+        <th scope="row">2</th>
+        <td><a href="https://ru.wikipedia.org/wiki/russia"><span value="russia">Russia</span></a></td>
+        <td><span value="490">490$</span></td>
+        <td><span value="145 478 097">145 478 097</span></td>
+        <td><span value="17 125 191">17 125 191</span></td>
+        <td><span value="1">Yes</span></td>
+    </tr>
+</template>
+
+<script>
+    var countries = [];
+    var lastFilter = document.body;
+    var column_ = 1;
+
+    function sortCountries(e, isUp, column) {
+        column_ = column;
+        if (e != lastFilter) {
+            filterColumn(column, isUp);
+        }
+        viewCountries();
+
+        lastFilter.classList.remove('neon');
+        lastFilter = e;
+        lastFilter.classList.add('neon');
+    }
+
+    async function getCountries() {
+        salary_min = document.getElementsByName("salary_min")[0].value;
+        salary_max = document.getElementsByName("salary_max")[0].value;
+
+        area_min = document.getElementsByName("area_min")[0].value;
+        area_max = document.getElementsByName("area_max")[0].value;
+
+        people_min = document.getElementsByName("people_min")[0].value;
+        people_max = document.getElementsByName("people_max")[0].value;
+
+        sea_check = document.getElementsByName("sea_check")[0].checked;
+
+        let url = `/Home/GetCountries?salary_min=${salary_min}&salary_max=${salary_max}&area_min=${area_min}&area_max=${area_max}&people_min=${people_min}&people_max=${people_max}&sea_check=${sea_check}`;
+        let response = await fetch(url);
+
+        let countries_ = await response.json();
+        console.log(countries_);
+
+        for (let i = 0; i < countries_.length; i++) {
+            let country = countries_[i]
+            countries.push([country.Name, country.Salary, country.Area, country.People, country.Sea]);
+        }
+        viewCountries();
+    }
+
+    function filterColumn(column, isUp) {
+        if (isUp) {
+            countries.sort(sortMaxMin);
+        } else {
+            countries.sort(sortMinMax);
+        }
+    }
+
+    function sortMinMax(a, b) {
+        if (a[column_] > b[column_]) return 1;
+        if (a[column_] < b[column_]) return -1;
+        return 0
+    }
+    function sortMaxMin(a, b) {
+        if (a[column_] > b[column_]) return -1;
+        if (a[column_] < b[column_]) return 1;
+        return 0
+    }
+
+    function viewCountries() {
+        document.querySelector("tbody").innerHTML = "";
+        for (i = 0; i < countries.length; i++) {
+            addCountry(countries[i][0], countries[i][1], countries[i][2], countries[i][3], countries[i][4]);
+        }
+    }
+
+    function addCountry(name, average_salary, area, population, sea) {
+        var tbody = document.querySelector("tbody");
+        var template = document.querySelector('#country_row');
+
+        var clone = template.content.cloneNode(true);
+        var td = clone.querySelectorAll("td");
+        var tr_len = tbody.querySelectorAll("tr").length;
+        td[0].querySelector("a").href = "https://ru.wikipedia.org/wiki/" + name;
+        name_ = td[0].querySelector("span");
+        average_salary_ = td[1].querySelector("span");
+        area_ = td[2].querySelector("span");
+        population_ = td[3].querySelector("span");
+        sea_ = td[4].querySelector("span");
+
+        clone.querySelector("th").textContent = tr_len + 1
+        name_.textContent = name;
+        average_salary_.textContent = average_salary.toLocaleString() + "$";
+        area_.textContent = area.toLocaleString();
+        population_.textContent = population.toLocaleString();
+        sea_.textContent = (sea == 1) ? "Yes" : "No";
+
+        tbody.appendChild(clone);
+
+    }
+</script>
