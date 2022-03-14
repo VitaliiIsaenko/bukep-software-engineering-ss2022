@@ -7,7 +7,7 @@ public class CountriesCsvReader
 {
     public static Country[] ReadCountries(string fileName)
     {
-        var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent;
+        var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
         var filePath = $"{curr}/countries/{fileName}";
 
         Country[] countries = new Country[10];
