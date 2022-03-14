@@ -13,15 +13,7 @@ public class Program
 
             bool liveBySea;
 
-            if (answer == "да")
-            {
-                liveBySea = true;
-            }
-
-            else
-            {
-                liveBySea = false;
-            }
+            liveBySea = answer == "да";
 
             Console.WriteLine(liveBySea);
             Country[] countries = CountriesCsvReader.ReadCountries("bezuglov.csv");
@@ -29,7 +21,14 @@ public class Program
             
             if (countries[0].HasSea)
             {
-                Console.WriteLine(countries[0].ToString());
+                if (liveBySea == true)    
+                {
+                    Console.WriteLine(countries[0].ToString());
+                }
+                else
+                {
+                    Console.WriteLine(countries[1].ToString());  
+                } 
             }
             else
             {
