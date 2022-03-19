@@ -1,24 +1,38 @@
-﻿namespace CountriesRecommendation;
+﻿using CountriesRecommendation.Helpers;
+
+namespace CountriesRecommendation;
 
 public class Program
-{
-    public static void Main()
     {
-        Console.WriteLine("Хотите ли вы жить у моря?");
-        string answer = Console.ReadLine();
+    private const int V = 1;
 
-        bool liveBySea;
-
-        if (answer == "да")
+    public static void Main()
         {
-            liveBySea = true;
-        }
+            Console.WriteLine("Хотите ли вы жить у моря?");
+            string answer = Console.ReadLine();
 
-        else
-        {
-            liveBySea = false;
-        }
+            bool liveBySea;
 
-        Console.WriteLine(liveBySea);
+            liveBySea = answer == "да";
+
+            Console.WriteLine(liveBySea);
+            Country[] countries = CountriesCsvReader.ReadCountries("Osipova.csv");
+            CountriesCsvReader.ReadCountries("Osipova.csv");
+            
+            if (countries[0].HasSea)
+            {
+                if (liveBySea == true)    
+                {
+                    Console.WriteLine(countries[0].ToString());
+                }
+                else
+                {
+                    Console.WriteLine(countries[1].ToString());  
+                } 
+            }
+            else
+            {
+                Console.WriteLine(countries[1].ToString());
+            } 
+        }
     }
-}
