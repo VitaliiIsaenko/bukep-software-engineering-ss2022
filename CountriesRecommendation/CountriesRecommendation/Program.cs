@@ -3,6 +3,10 @@
 namespace CountriesRecommendation;
 
 public class Program
+
+{
+    public static void Main()
+   
     {
     private const int V = 1;
 
@@ -16,7 +20,7 @@ public class Program
             liveBySea = answer == "да";
 
             Console.WriteLine(liveBySea);
-            Country[] countries = CountriesCsvReader.ReadCountries("Osipova.csv");
+            /*Country[] countries = CountriesCsvReader.ReadCountries("Osipova.csv");
             CountriesCsvReader.ReadCountries("Osipova.csv");
             
             if (countries[0].HasSea)
@@ -34,5 +38,7 @@ public class Program
             {
                 Console.WriteLine(countries[1].ToString());
             } 
+            */
         }
+
     }
