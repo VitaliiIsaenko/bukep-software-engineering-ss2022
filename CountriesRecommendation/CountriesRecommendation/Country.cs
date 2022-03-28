@@ -2,7 +2,7 @@ using System;
 public class Country
 {   
     public string Name {get;}
-
+    
     private long Population;
 
     private long AverageSalary;
