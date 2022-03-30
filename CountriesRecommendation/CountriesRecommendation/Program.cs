@@ -1,24 +1,34 @@
-﻿namespace CountriesRecommendation;
+﻿using CountriesRecomendation.Helpers;
+
+namespace CountriesRecomendation;
 
 public class Program
 {
-    public static void Main()
+  public static void Main()
+  {
+    Console.WriteLine("Хотите ли вы жить у моря");
+    string? answer = Console.ReadLine();
+    bool liveBySea;
+    liveBySea = answer =="да";
+    UserPreferences preferences = new UserPreferences();
+    preferences.SetLiveBySea(liveBySea);
+    string[][] countriesInfo = CsvReader.Read("Zvonarev.csv");
+    Country[] countries = new Country[countriesInfo.Length];
+    for (int i = 0; i < countriesInfo.Length; i++)
     {
-        Console.WriteLine("Хотите ли вы жить у моря?");
-        string answer = Console.ReadLine();
-
-        bool liveBySea;
-
-        if (answer == "да")
+      string[] countryInfo = countriesInfo[i];
+      countries[i] = new Country(countryInfo[0], long.Parse(countryInfo[1]), int.Parse(countryInfo[2]),countryInfo[3] == "да");
+    } 
+      foreach(Country country in countries)
+      {
+        if (preferences.Satisfied(country))
         {
-            liveBySea = true;
+          Console.WriteLine(country.Name);
+          return;
         }
+      }
+      Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
+  }
 
-        else
-        {
-            liveBySea = false;
-        }
-
-        Console.WriteLine(liveBySea);
-    }
 }
+
