@@ -1,6 +1,6 @@
-﻿using CountriesRecomendation.Helpers;
+﻿using CountriesRecommendation.Helpers;
 
-namespace CountriesRecomendation;
+namespace CountriesRecommendation;
 
 public class Program
 {

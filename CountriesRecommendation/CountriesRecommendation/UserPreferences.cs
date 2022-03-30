@@ -1,6 +1,6 @@
 public class UserPreferences
 {
-    private string ?size;
+    private string ? size;
     private int minSalary;
     private bool LiveBySea;
 
