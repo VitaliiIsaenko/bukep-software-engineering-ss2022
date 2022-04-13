@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesRecommendation", "CountriesRecommendation\CountriesRecommendation.csproj", "{5370C9C1-F931-4EE3-AB5F-B299FC3EA02B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesRecommendation.Helpers", "CountriesRecommendation.Helpers\CountriesRecommendation.Helpers.csproj", "{13275530-CC7A-471C-B4EA-E2A5D4B66C9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5370C9C1-F931-4EE3-AB5F-B299FC3EA02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5370C9C1-F931-4EE3-AB5F-B299FC3EA02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5370C9C1-F931-4EE3-AB5F-B299FC3EA02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5370C9C1-F931-4EE3-AB5F-B299FC3EA02B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13275530-CC7A-471C-B4EA-E2A5D4B66C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13275530-CC7A-471C-B4EA-E2A5D4B66C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13275530-CC7A-471C-B4EA-E2A5D4B66C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13275530-CC7A-471C-B4EA-E2A5D4B66C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
