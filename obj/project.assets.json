@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\е\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
-      "projectName": "CountriesRecommendation.Helpers",
-      "projectPath": "C:\\Users\\е\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\е\\bukep-software-engineering\\bukep-software-engineering.csproj",
+      "projectName": "bukep-software-engineering",
+      "projectPath": "C:\\Users\\е\\bukep-software-engineering\\bukep-software-engineering.csproj",
       "packagesPath": "C:\\Users\\е\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\е\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\obj\\",
+      "outputPath": "C:\\Users\\е\\bukep-software-engineering\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\е\\AppData\\Roaming\\NuGet\\NuGet.Config"

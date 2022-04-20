@@ -1,0 +1,5 @@
+C:\Users\е\bukep-software-engineering\obj\Debug\net6.0\bukep-software-engineering.csproj.AssemblyReference.cache
+C:\Users\е\bukep-software-engineering\obj\Debug\net6.0\bukep-software-engineering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\е\bukep-software-engineering\obj\Debug\net6.0\bukep-software-engineering.AssemblyInfoInputs.cache
+C:\Users\е\bukep-software-engineering\obj\Debug\net6.0\bukep-software-engineering.AssemblyInfo.cs
+C:\Users\е\bukep-software-engineering\obj\Debug\net6.0\bukep-software-engineering.csproj.CoreCompileInputs.cache

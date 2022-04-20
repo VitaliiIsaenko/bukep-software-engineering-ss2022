@@ -1,4 +1,6 @@
-﻿namespace CountriesRecommendation;
+﻿using CountriesRecommendation.Helpers;
+
+namespace CountriesRecommendation;
 
 public class Program
 {
@@ -9,16 +11,23 @@ public class Program
 
         bool liveBySea;
 
-        if (answer == "да")
-        {
-            liveBySea = true;
-        }
-
-        else
-        {
-            liveBySea = false;
-        }
+        liveBySea = answer.ToLower() == "да";
 
         Console.WriteLine(liveBySea);
+
+       Country[]countries = CountriesCsvReader.ReadCountries("Gushchina.csv");
+       if (liveBySea){
+
+       if (countries[0].HasSea) {
+           Console.WriteLine(countries[0].ToString());
+       }
+       if (countries[1].HasSea) {
+           Console.WriteLine(countries[1].ToString());
+       }
+    } else {
+        Console.WriteLine(countries[0].ToString());
+    }
+
+
     }
 }
