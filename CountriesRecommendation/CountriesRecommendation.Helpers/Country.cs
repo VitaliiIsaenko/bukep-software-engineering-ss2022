@@ -1,7 +1,7 @@
 ﻿namespace CountriesRecommendation.Helpers;
     public class Country
 {
-    public Country(object value, string name, long population, int averageSalary, bool hasSea)
+    public Country(string name, long population, int averageSalary, bool hasSea)
     {
         Name = name;
         Population = population;
