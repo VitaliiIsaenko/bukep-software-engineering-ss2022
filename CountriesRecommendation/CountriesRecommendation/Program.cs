@@ -6,12 +6,15 @@ public class Program
     public static void Main()
     {
         Console.WriteLine("Хотите ли вы жить у моря?");
-        var answer = Console.ReadLine();
+        string? answer = Console.ReadLine();
 
-        var liveBySea = answer == "да";
+        bool liveBySea = answer == "да";
+        Console.WriteLine("Желаемая зп");
+        int salary = int.Parse (Console.ReadLine());
+        UserPreferences preferences = new UserPreferences ();
 
-        UserPrseferences preferences = new UserPreferences ();
         preferences.SetLiveBySea (liveBySea);
+        preferences.SetMinSalary(salary);
 
         string[][] countriesInfo = CsvReader.Read("bondarev.csv");
 
@@ -22,7 +25,7 @@ public class Program
         {
             string[] countryInfo = countriesInfo[i];
 
-            countries[i] = new Country(countryInfo[0]), countryInfo[3] =="да", long.Parse(countryInfo[2]); 
+            countries[i] = new Country(countryInfo[0], int.Parse(countryInfo[2]), countryInfo[3] =="да", long.Parse(countryInfo[2])); 
         }
         foreach (Country country in countries) {
             if (preferences.Satisfied(country)){

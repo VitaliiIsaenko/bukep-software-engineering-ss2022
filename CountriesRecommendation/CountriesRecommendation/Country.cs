@@ -6,10 +6,29 @@ public class Country
         this.averageSalary = averageSalary;
         this.HasSea = hasSea;
         this.population = population;
-        this.MinSalarySatisfied = minsalarysatisfied;
     }
     private long population;
-    private int averageSalary;
-    private bool HasSea;
-    private string Name;
+    public int averageSalary;
+    public bool HasSea;
+    public string Name;
+    private bool liveBySea;
+    public bool Satisfied(Country country)
+    {
+        if (liveBySea)
+
+        {
+            if (country.HasSea)
+
+            {
+                return true;
+            }
+            
+            else
+
+            {
+                return false;
+            }            
+        }
+        return true;
+    }     
 }

@@ -5,13 +5,8 @@ using System.Linq;
 namespace CountriesRecommendation.Helpers;
 public class CsvReader
 {
-<<<<<<< HEAD:CountriesRecommendation/CountriesRecommendation.Helpers/CountriesCsvReader.cs
-    public static Country[] ReadCountries(string fileName)
-    {
-=======
     public static string[][] Read(string fileName)
     {   
->>>>>>> origin/lab-3:CountriesRecommendation/CountriesRecommendation.Helpers/CsvReader.cs
         var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
         var filePath = $"{curr}/countries/{fileName}";
 
@@ -25,15 +20,5 @@ public class CsvReader
             rows[i] = fields;
         }
         return rows;
-    }
-
-    public static string[][] Read(string v)
-    {
-        throw new NotImplementedException();
-    }
-
-    public static string[][] Read(string v)
-    {
-        throw new NotImplementedException();
     }
 }

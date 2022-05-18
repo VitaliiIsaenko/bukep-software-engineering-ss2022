@@ -6,35 +6,64 @@ public class UserPreferences
 
     private string? size;
 
-    private bool MinSalarySatisfied;
-
+    private bool MinSalarySatisfied (Country country){
+    return minSalary<country.averageSalary;
+    }
     public void SetLiveBySea(bool liveBySea)
     {
         this.liveBySea = liveBySea;
     }
 
-    public bool Satisfied(Country country)
+    public void SetMinSalary(int salary) 
     {
-        if (liveBySea)
-
+        if(salary > 0)
         {
-            if (country.HasSea)
-
-            {
-                return true;
-            }
-            
-            else
-
-            {
-                return false;
-            }
-
-            else
-
-            {
-                return true;
-            }
+            this.minSalary = salary;
         }
-    }     
+        else
+        {
+        throw new Exception("Минимальная зарплата должна быть больше 0");
+        }
+        
+    }
+    internal bool Satisfied(Country country)
+    {
+        throw new NotImplementedException();
+    }
+
+    // public bool Satisfied(Country country)
+    // {
+    //     if (liveBySea)
+
+    //     {
+    //         if (country.HasSea)
+
+    //         {
+    //             return true;
+    //         }
+
+    //         else
+
+    //         {
+    //             return false;
+    //         }            
+    //     }
+    //     return true;
+    // }      {
+    //             return false;
+    //         }            
+    //     }
+    //     return true;
+    // }      {
+    //             return false;
+    //         }            
+    //     }
+    //     return true;
+    // }      {
+    //             return false;
+    //         }            
+    //     }
+    //     return true;
+    // }     urn true;
+    // }     
 }
