@@ -10,9 +10,11 @@ public class Program
         string answer = Console.ReadLine();
 
         bool liveBySea = answer == "да";
+        Console.WriteLine("Желаемая зп");
+        int salary = int.Parse (Console.ReadLine());
         UserPreferences preferences = new UserPreferences ();
         preferences.SetLiveBySea (liveBySea);
-
+preferences.SetMinSalary(salary);
 
           string[][] countriesInfo = CsvReader.Read("Gushchina.csv");
 

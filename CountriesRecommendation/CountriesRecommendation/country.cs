@@ -6,9 +6,10 @@ Name = name;
 this.averageSalary = averageSalary;
 this.HasSea = hasSea;
 this.population = population;
+
     }
-private long population;
-private int averageSalary;
+public long population;
+public int averageSalary;
 public bool HasSea;
 public string Name;
 }
