@@ -6,6 +6,11 @@ public class UserPreferences
 
     private string? size;
 
+     public bool Satisfied(Country country)
+    {
+        return MinSalarySatisfied(country) && SatisfiedLiveBySea(country);
+    }
+
     private bool MinSalarySatisfied (Country country){
     return minSalary<country.averageSalary;
     }
@@ -26,44 +31,19 @@ public class UserPreferences
         }
         
     }
-    internal bool Satisfied(Country country)
+    public bool SatisfiedLiveBySea(Country country)
     {
-        throw new NotImplementedException();
-    }
-
-    // public bool Satisfied(Country country)
-    // {
-    //     if (liveBySea)
-
-    //     {
-    //         if (country.HasSea)
-
-    //         {
-    //             return true;
-    //         }
-
-    //         else
-
-    //         {
-    //             return false;
-    //         }            
-    //     }
-    //     return true;
-    // }      {
-    //             return false;
-    //         }            
-    //     }
-    //     return true;
-    // }      {
-    //             return false;
-    //         }            
-    //     }
-    //     return true;
-    // }      {
-    //             return false;
-    //         }            
-    //     }
-    //     return true;
-    // }     urn true;
-    // }     
+        if (liveBySea)
+        {
+            if (country.HasSea)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }            
+        }
+        return true;
+    }                    
 }
