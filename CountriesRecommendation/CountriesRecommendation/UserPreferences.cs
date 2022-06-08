@@ -2,16 +2,28 @@ public class UserPreferences
 {
     private bool liveBySea;
     private int minSalary;
-    private string size;
-    private bool MinSalarySatisfied(Country country) {
-       return minSalary<country.averageSalary;
+    private CountrySize size;
+    private bool MinSalarySatisfied(Country country)
+    {
+        return minSalary < country.averageSalary;
     }
+    public bool SizeSatisfied(Country country)
+    {
+        return size == country.GetSize();
+    }
+    public void SetSize(CountrySize size)
+    {
+        this.size = size;
+    }
+
     public void SetLiveBySea(bool liveBySea)
     {
         this.liveBySea = liveBySea;
     }
-    public void SetMinSalary(int salary) {
-        if(salary<0){
+    public void SetMinSalary(int salary)
+    {
+        if (salary < 0)
+        {
             throw new Exception("зп не может быть отрицательной");
         }
         minSalary = salary;
@@ -19,8 +31,9 @@ public class UserPreferences
 
 
 
-    public bool Satisfied (Country info) {
-        return LiveBySeaSatisfied (info)&& MinSalarySatisfied (info);
+    public bool Satisfied(Country info)
+    {
+        return LiveBySeaSatisfied(info) && MinSalarySatisfied(info) && SizeSatisfied(info);
     }
     public bool LiveBySeaSatisfied(Country country)
     {
