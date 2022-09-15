@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\001\\.nuget\\packages\\": {}
+    "C:\\Users\\1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\1\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
       "projectName": "CountriesRecommendation.Helpers",
-      "projectPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
-      "packagesPath": "C:\\Users\\001\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\obj\\",
+      "projectPath": "C:\\Users\\1\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -49,7 +49,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
