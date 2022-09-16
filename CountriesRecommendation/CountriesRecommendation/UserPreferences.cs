@@ -24,6 +24,6 @@ public class UserPreferences
     }
     public void SetLiveBySea(bool liveBySea)
     {
-        liveBySea = this.liveBySea;
+        this.liveBySea = liveBySea;
     }
 }
