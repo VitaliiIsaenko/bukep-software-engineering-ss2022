@@ -10,3 +10,15 @@ C:\Users\001\bukep-software-engineering\CountriesRecommendation\CountriesRecomme
 C:\Users\001\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\refint\CountriesRecommendation.Helpers.dll
 C:\Users\001\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.pdb
 C:\Users\001\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\ref\CountriesRecommendation.Helpers.dll
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\net6.0\CountriesRecommendation.Helpers.deps.json
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\net6.0\CountriesRecommendation.Helpers.dll
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\net6.0\CountriesRecommendation.Helpers.pdb
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.csproj.AssemblyReference.cache
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.AssemblyInfoInputs.cache
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.AssemblyInfo.cs
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.dll
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\refint\CountriesRecommendation.Helpers.dll
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\CountriesRecommendation.Helpers.pdb
+C:\Users\Денчик\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\net6.0\ref\CountriesRecommendation.Helpers.dll
