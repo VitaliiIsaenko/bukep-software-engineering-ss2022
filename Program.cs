@@ -1,11 +1,12 @@
-﻿Console.dWriteLine ("Хотите ли вы жить у моря?");
-string answer = Console.ReadLine ();
-bool liveBySea;
-if (ansfer == "да")
+﻿Console.WriteLine ("Хотите ли вы жить у моря?");
+string answer = Console.ReadLine();
+bool LiveBySea;
+if (answer == "да")
 {
-    liveBySea = true;
+    LiveBySea = true;
 }
-esle
+else
 {
-    liveBySea =  false;
+    LiveBySea =  false;
 }
+Console.WriteLine (LiveBySea);
