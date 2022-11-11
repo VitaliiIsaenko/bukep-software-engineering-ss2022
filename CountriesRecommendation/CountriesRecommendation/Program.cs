@@ -1,4 +1,6 @@
-﻿namespace CountriesRecommendation;
+﻿using CountriesRecommendation.Helpers;
+
+namespace CountriesRecommendation;
 
 public class Program
 {
@@ -9,16 +11,13 @@ public class Program
 
         bool liveBySea;
 
-        if (answer == "да")
-        {
-            liveBySea = true;
-        }
-
-        else
-        {
-            liveBySea = false;
-        }
+        liveBySea = answer == "да";
 
         Console.WriteLine(liveBySea);
+        Country[] countries = CountriesCsvReader.ReadCountries("Isaenko.csv");
+        if (!countries[0].HasSea)
+        {
+        Console.WriteLine(countries[0].ToString());
+        }
     }
 }
