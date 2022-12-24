@@ -1,0 +1,140 @@
+[33mcommit 637b1e90ba049532f743e30b75e5689f400ac25b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Semin Daniil <daniilsemin258@gmail.com>
+Date:   Sat Oct 29 20:26:33 2022 +0300
+
+    countries/Semin.csv
+
+[33mcommit e65595625ed021ff78251bedff479d62c35b3efb[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Denrole <denis.povalyaev@inbox.ru>
+Date:   Mon Oct 3 16:44:34 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 50174e889eda144aee6a9c545694d34c9c5cd1fb[m
+Author: Denrole <denis.povalyaev@inbox.ru>
+Date:   Mon Oct 3 16:31:58 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit e76a66d70803ad7aa4a6f942fd25425840653106[m
+Author: BronnikovDaniil <ehotec@mail.ru>
+Date:   Sun Sep 11 15:14:27 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 439eb060ed7efcd461494cc46490ede56f467518[m
+Author: Fury-2t <mr.doxnowscky2014@yandex.ru>
+Date:   Tue Jun 28 23:24:07 2022 +0300
+
+    Dohnowski.csv
+
+[33mcommit c77001bedbf533498f25277b8a691395a30e1716[m
+Author: Vladimir <99183335+VladimirGunch@users.noreply.github.com>
+Date:   Sat Apr 2 14:53:10 2022 +0300
+
+    Add files via upload
+
+[33mcommit 5f5414f1fee25eb82119c82b7083a95f22b461cf[m
+Author: bezuglov <dimabezuglov501@gmail.com>
+Date:   Thu Mar 10 20:16:45 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 520a6e6960dd32c8916a3634b733cdbb8f278781[m
+Author: Alisa <aliska.osipova.2005@mail.ru>
+Date:   Sat Feb 26 19:12:49 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit ccd96d55b839c9aaf14b8bfa71aa74d91107ecf6[m
+Author: whateto <rendesvald@gmail.com>
+Date:   Wed Feb 16 00:12:23 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 8d9bd0f60b7ef15f11837c5ebbd1aefe504a6a90[m
+Author: whateto <rendesvald@gmail.com>
+Date:   Tue Feb 15 23:39:47 2022 +0300
+
+    remove Guscshina.xlsx
+
+[33mcommit cfd5a6d4ba3888927df4bf534540cf6d119ba486[m
+Author: whateto <rendesvald@gmail.com>
+Date:   Tue Feb 15 23:24:54 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit fb8de2baf2b57f70f0dc220ffeae1ebe4c1de1b2[m
+Merge: 4850428 6f44c1e
+Author: Алексей <aleksej-zvonarev05@mail.ru>
+Date:   Mon Feb 14 15:13:58 2022 +0300
+
+    merg
+
+[33mcommit 48504285d3545af4e89ece6c0dc5f338a71b549c[m
+Author: Алексей <aleksej-zvonarev05@mail.ru>
+Date:   Mon Feb 14 15:08:47 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 6f44c1ed527c8de677209ef736e6af0a83c079ee[m
+Merge: 271b384 df62665
+Author: evoshny <blackford0@yandex.ru>
+Date:   Wed Feb 9 21:52:47 2022 +0300
+
+    Merge branch 'master' of https://github.com/VitaliiIsaenko/bukep-software-engineering-ss2022
+
+[33mcommit 271b38450b361e34dae55d255c79c3b2bc67d981[m
+Author: evoshny <blackford0@yandex.ru>
+Date:   Wed Feb 9 21:52:17 2022 +0300
+
+    Shihantsov.csv
+
+[33mcommit df6266562d1e6d47eb478e31b876848fd11306f6[m
+Merge: 21f9872 234018b
+Author: abondarev1 <ant.bond02@mail.ru>
+Date:   Wed Feb 9 00:02:47 2022 +0300
+
+    Merge branch 'master' of https://github.com/VitaliiIsaenko/bukep-software-engineering-ss2022
+
+[33mcommit 21f98725f14be20ab6038d861580e3df31faf973[m
+Author: abondarev1 <ant.bond02@mail.ru>
+Date:   Tue Feb 8 23:55:00 2022 +0300
+
+    Добавить файл с информацией о странах
+
+[33mcommit 234018b87ba51a0616b77af476613a08cf5e29d5[m
+Author: Хлынов Илья <kokoko.2021@internet.ru>
+Date:   Mon Feb 7 21:14:21 2022 +0300
+
+    Khlynov Ilya.xlsx
+
+[33mcommit cd6a78c6bb253f47837eaef5ff83cacbf07e0144[m[33m ([m[1;31morigin/lab-1[m[33m)[m
+Author: Vitalii Isaenko <lookyisaenko@gmail.com>
+Date:   Sun Jan 16 10:51:05 2022 +0100
+
+    Add example csv file
+
+[33mcommit d2c128411d39f7c8ff17d981de1d4d8e83db1500[m
+Author: Vitalii Isaenko <lookyisaenko@gmail.com>
+Date:   Sun Jan 16 10:46:10 2022 +0100
+
+    Add examples folder
+
+[33mcommit 436d818de2cacb4cdbc947cc0e49946a9ef39625[m
+Author: Vitalii Isaenko <lookyisaenko@gmail.com>
+Date:   Sun Jan 16 10:44:39 2022 +0100
+
+    Update readme
+
+[33mcommit 1ff83ab287db0358646e42ce5bfa01c6334d81b5[m
+Author: Vitalii Isaenko <lookyisaenko@gmail.com>
+Date:   Sun Jan 16 10:39:31 2022 +0100
+
+    Modify gitignore
+
+[33mcommit f04ef62eeb5447e488d928e4333c4852c42d323e[m
+Author: Vitalii Isaenko <lookyisaenko@gmail.com>
+Date:   Sun Jan 16 12:27:18 2022 +0300
+
+    Initial commit

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj": {}
+    "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj": {
+    "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
+        "projectUniqueName": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
         "projectName": "CountriesRecommendation.Helpers",
-        "projectPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
-        "packagesPath": "C:\\Users\\001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\obj\\",
+        "projectPath": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj",
+        "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,34 +55,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj": {
+    "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj",
+        "projectUniqueName": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj",
         "projectName": "CountriesRecommendation",
-        "projectPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj",
-        "packagesPath": "C:\\Users\\001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\obj\\",
+        "projectPath": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj",
+        "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj": {
-                "projectPath": "C:\\Users\\001\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj"
+              "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Danil\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation.Helpers\\CountriesRecommendation.Helpers.csproj"
               }
             }
           }
@@ -99,7 +104,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -108,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
