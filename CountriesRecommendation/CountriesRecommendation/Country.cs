@@ -1,32 +1,29 @@
-﻿using CountriesRecommendation.Helpers;
-
-namespace CountriesRecommendation;
-
-public class Program
+using System;
+public class Country
 {
-  public static void Main()
-  {
-    Console.WriteLine("Хотите ли вы жить у моря");
-    string? answer = Console.ReadLine();
-    bool liveBySea;
-    liveBySea = answer =="да";
-    UserPreferences preferences = new UserPreferences();
-    preferences.SetLiveBySea(liveBySea);
-    string[][] countriesInfo = CsvReader.Read("Semin.csv");
-    Country[] countries = new Country[countriesInfo.Length];
-    for (int i = 0; i < countriesInfo.Length; i++)
-    {
-      string[] countryInfo = countriesInfo[i];
-      countries[i] = new Country(countryInfo[0], long.Parse(countryInfo[1]), int.Parse(countryInfo[2]),countryInfo[3] == "да");
-    } 
-      foreach(Country country in countries)
-      {
-        if (preferences.Satisfied(country))
-        {
-          Console.WriteLine(country.Name);
-          return;
-        }
-      }
-      Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
-  }
-
+   public string Name {get;}
+   private long Population; 
+   private long AverageSalary; 
+   public bool HasSea {get;}
+   public Country(string countryName, long countryPopulation, long countryAverageSalary, bool countryHasSea)
+   {
+       Name = countryName;
+       Population = countryPopulation;
+       AverageSalary = countryAverageSalary;
+       HasSea = countryHasSea;
+   }
+   public override string ToString()
+   {
+       var description = $"Страна {Name} с населением {Population}, средней зарплатой {AverageSalary}$. ";
+       if (HasSea)
+       {
+           description += "Имеет выход к морю";
+       }
+       else
+       {
+           description += "Не имеет выхода к морю";
+       }
+       return description;
+   }
+  
+}
